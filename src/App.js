@@ -43,7 +43,14 @@ function App() {
 
   return (
     <div className="App">
-      <BaseTable width={500} height={500} fixed columns={cols} data={data} />
+      <BaseTable
+        width={500}
+        height={500}
+        fixed
+        columns={cols}
+        data={data}
+        estimatedRowHeight={50}
+      />
       <button onClick={handleClick}>Remove one column</button>
     </div>
   );
